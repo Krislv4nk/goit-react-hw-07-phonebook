@@ -2,11 +2,11 @@ import { createSlice } from '@reduxjs/toolkit';
 import { fetchContacts, addContactThunk, deleteContactThunk } from './contactsSlice.operations';
 
 const initialState = {
-  contacts: [{
-    items: [],
+  contacts: {
+    contacts: [],
     isLoading: false,
     error: null,
-  },],
+  },
 };
 
 const contactsSlice = createSlice({

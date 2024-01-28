@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {selectContacts} from '../../redux/contacts/contactsSlice.selectors';
+import {selectContacts} from '../../redux/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContactThunk} from '../../redux/contacts/contactsSlice.operations';
 
