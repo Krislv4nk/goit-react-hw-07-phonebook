@@ -6,7 +6,6 @@ import css from "./contacts.module.css";
 export const Contact = ({id, name, number}) => {
 const dispatch = useDispatch();
   const handleDeleteBtnClick = () => {
-    console.log('deleted contact', 'id:');
     const action = deleteContactThunk(id);
     dispatch(action);
   };

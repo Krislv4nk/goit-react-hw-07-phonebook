@@ -5,7 +5,6 @@ import {  useSelector } from "react-redux";
 import css from "./contactList.module.css";
 
 export const ContactList = ({handleDeleteBtnClick}) => {
- 
   const filteredContacts = useSelector(selectFilteredContacts);
 return (
   <ul className={css.contactList}>
