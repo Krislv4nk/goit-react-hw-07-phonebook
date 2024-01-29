@@ -33,7 +33,7 @@ const contactsSlice = createSlice({
       })
       .addCase(addContactThunk.fulfilled, (state, action) => {
         state.contacts.isLoading = false;
-        state.contacts.contacts.push(action.payload);
+        state.contacts.contacts = [...state.contacts.contacts, action.payload];;
         state.contacts.error = null;
       })
       .addCase(addContactThunk.rejected, (state, action) => {
